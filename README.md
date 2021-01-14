@@ -15,7 +15,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/desi109/linkio-space">
-    <img style="" src="images/logo-with-background.png" alt="Logo" width="100%" height="100%">
+    <img style="" src="images/logo/logo-with-background.png" alt="Logo" width="100%" height="100%">
   </a>
 
 
