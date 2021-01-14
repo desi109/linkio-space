@@ -14,13 +14,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<div align="center" style="background: rgb(37,144,251);
-background: radial-gradient(circle, rgba(37,144,251,0.865983893557423) 11%, rgba(10,2,173,0.8155637254901961) 100%);">
   <a href="https://github.com/desi109/linkio-space">
-    <img style="" src="images/logo.png" alt="Logo" width="50" height="50">
-    <img src="images/big-logo.png" alt="Logo" width=180" height="50">
+    <img style="" src="images/logo-with-background.png" alt="Logo" width="2000" height="40">
   </a>
-  </div>
+
 
   <h3 align="center">Linkio.Space</h3>
 
