@@ -13,11 +13,13 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p style="background-img: url("https://github.com/desi109/linkio-space/blob/master/images/parallax.jpg");" align="center">
+<p align="center">
+<div align="center" style="background-image: url('./images/parallax.jpg');background-attachment: fixed; background-position: top;">
   <a href="https://github.com/desi109/linkio-space">
     <img src="images/logo.png" alt="Logo" width="50" height="50">
     <img src="images/big-logo.png" alt="Logo" width=180" height="50">
   </a>
+  </div>
 
   <h3 align="center">Linkio.Space</h3>
 
