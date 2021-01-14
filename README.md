@@ -13,7 +13,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
+<p style="background-img: url("https://github.com/desi109/linkio-space/blob/master/images/parallax.jpg");" align="center">
   <a href="https://github.com/desi109/linkio-space">
     <img src="images/logo.png" alt="Logo" width="50" height="50">
     <img src="images/big-logo.png" alt="Logo" width=180" height="50">
