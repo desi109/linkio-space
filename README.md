@@ -14,9 +14,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<div align="center" style="background-image: url('https://github.com/desi109/linkio-space/blob/master/images/parallax.jpg');background-attachment: fixed; background-position: top;">
+<div align="center" style="background: rgb(37,144,251);
+background: radial-gradient(circle, rgba(37,144,251,0.865983893557423) 11%, rgba(10,2,173,0.8155637254901961) 100%);">
   <a href="https://github.com/desi109/linkio-space">
-    <img src="images/logo.png" alt="Logo" width="50" height="50">
+    <img style="" src="images/logo.png" alt="Logo" width="50" height="50">
     <img src="images/big-logo.png" alt="Logo" width=180" height="50">
   </a>
   </div>
