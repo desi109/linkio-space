@@ -154,5 +154,5 @@ Project Link: [https://github.com/desi109/linkio-space](https://github.com/desi1
 [license-url]: https://github.com/desi109/linkio-space/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/desislava-milusheva-200574151
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshoots/screenshoot-start-page-1.png
 
