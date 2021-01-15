@@ -1,9 +1,6 @@
---  psql -U user1234 -d linkio.space -f create_tables.sql
---  psql -U user1234 -d linkio.space -f insert_data.sql
+--  psql -U linkio_space_user -d linkio_space -f create_tables.sql
+--  psql -U linkio_space_user -d linkio_space -f insert_data.sql
 
--- DROP SCHEMA IF EXISTS linkio.space;
--- CREATE SCHEMA IF NOT EXISTS linkio.space;
--- SET SCHEMA linkio.space;
 
 DROP TABLE IF EXISTS users_connections;
 DROP TABLE IF EXISTS users_roles;
