@@ -68,7 +68,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://linkio.space)
 
 Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:** 
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 
@@ -87,24 +87,83 @@ Here's a blank template to get started:
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+To run this project you first need to install and set up:
+* [Java 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
   ```sh
-  npm install npm@latest -g
+  java -version
   ```
+* [ApacheMaven 3.6.3](https://maven.apache.org/download.cgi)
+  ```sh
+  mvn -v
+  ```
+* [PostgreSQL 12.4](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+* [pgAdmin 4](https://www.pgadmin.org/download/)
+* [Node.js v12.18](https://nodejs.org/en/download/)
+  ```sh
+  node -v
+  ```
+* NPM 6.14
+  ```sh
+  npm -v
+  ```
+* [Vue](https://vuejs.org/v2/guide/installation.html)
+  ```sh
+  npm install vue
+  vue -V
+  ```
+* [Vue CLI](https://cli.vuejs.org/guide/installation.html)
+  ```sh
+  npm install -g @vue/cli
+  ```
+
+
+
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo:
    ```sh
    git clone https://github.com/desi109/linkio-space.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
 
+2. Set up the database fot the project
+  * ### For Windows
+  * ### For Linux
+  
+  Start pgAdmin and run:
+   ```sh
+   cd linkiospace
+   psql -h localhost -p 5432 -U postgres -f create_user_and_database.sql
+
+   cd linkiospace-backend/src/main/resources/db_postgresql
+   psql -U linkio_space_user -d linkio_space -f create_tables.sql
+   psql -U linkio_space_user -d linkio_space -f insert_data.sql   
+   ```
+   
+   The first script set up new role and create database:
+   ```
+   Role: linkio_space_user
+   Password: 1234
+
+   Database: linkio_space
+   ```
+   The other two scripts create database tables and insert all data.
+
+3. Start the back-end of the project:
+   ```sh
+   cd linkiospace/linkiospace-backend
+   mvn spring-boot:run
+   ```
+   It is running on ```localhost:8080```.
+4. Start the front-end of the project:
+   ```sh
+   cd linkiospace/linkiospace-ui
+   npm run serve
+   ```
+   It is running on ```localhost:8081```.
+   
+5. Everything is ready. Go to ```localhost:8081```. Enjoy!  😉
+ 
 
 
 <!-- USAGE EXAMPLES -->
