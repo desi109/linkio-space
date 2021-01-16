@@ -54,7 +54,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -115,11 +114,8 @@ Every user has ```Connections``` (http://localhost:8081/user/connections) board 
 ![product-screenshot-user-connections-board-page]
 ![product-screenshot-user-connections-delete-board-page]
 
-To search for a new business card, the user should go to ```Search``` (http://localhost:8081/user/search), enter a code, and press the button for search.
+To search for a new business card, the user should go to ```Search``` (http://localhost:8081/user/search), enter a code, and press the button for search. If the business card is found, the user can easily add it to his connections from the button ```ADD USER TO YOUR CONNECTIONS```.
 ![product-screenshot-user-search-board-page]
-
-If the business card is found, the user can easily add it to his connections from the button ```ADD USER TO YOUR CONNECTIONS```. 
-![product-screenshoot-user-search-add-board-page]
 
 
 
@@ -271,15 +267,6 @@ To run this project you first need to install and set up:
  
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -330,5 +317,4 @@ Project Link: [https://github.com/desi109/linkio-space](https://github.com/desi1
 [product-screenshot-user-connections-board-page]: images/screenshoots/screenshoot-user-connections-board-page.png
 [product-screenshot-user-connections-delete-board-page]: images/screenshoots/screenshoot-user-connections-delete-board-page.png
 [product-screenshot-user-search-board-page]: images/screenshoots/screenshoot-user-search-board-page.png
-[product-screenshoot-user-search-add-board-page]: images/screenshoots/screenshoot-user-search-add-board-page.png
 
