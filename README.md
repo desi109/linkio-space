@@ -93,7 +93,7 @@ Admin profile page (http://localhost:8081/profile) has information about the adm
 ![product-screenshot-admin-profile-page]
 
 After editing the information, everything should be saved from the button ```SAVE``` .
-![product-screenshot-admin-profil-edit-page]
+![product-screenshot-admin-profile-edit-page]
 
 The admin view has ```Admin Board``` (http://localhost:8081/admin/users) where all users and their information is visible. 
 ![product-screenshot-admin-board-page]
@@ -323,13 +323,13 @@ Project Link: [https://github.com/desi109/linkio-space](https://github.com/desi1
 [product-screenshot-sign-up-page]: images/screenshoots/screenshoot-sign-up-page.png
 [product-screenshot-log-in-page]: images/screenshoots/screenshoot-log-in-page.png
 [product-screenshot-admin-profil-page]: images/screenshoots/screenshoot-admin-profile-page.png
-[product-screenshot-admin-profil-edit-page]: images/screenshoots/screenshoot-admin-profile-edit-page.png
+[product-screenshot-admin-profile-edit-page]: images/screenshoots/screenshoot-admin-profile-edit-page.png
 [product-screenshot-admin-board-page]: images/screenshoots/screenshoot-admin-board-page.png
 [product-screenshot-admin-board-delete-page]: images/screenshoots/screenshoot-admin-board-delete-page.png
-[product-screenshot-user-profil-page]: images/screenshoots/screenshoot-user-profile-page.png
+[product-screenshot-user-profile-page]: images/screenshoots/screenshoot-user-profile-page.png
 [product-screenshot-user-connections-board-page]: images/screenshoots/screenshoot-user-connections-board-page.png
 [product-screenshot-user-connections-delete-board-page]: images/screenshoots/screenshoot-user-connections-delete-board-page.png
-[product-screenshot-user-profil-page]: images/screenshoots/screenshoot-user-profile-page.png
+[product-screenshot-user-profile-page]: images/screenshoots/screenshoot-user-profile-page.png
 [product-screenshot-user-search-board-page]: images/screenshoots/screenshoot-user-search-board-page.png
 [product-screenshoot-user-search-add-board-page]: images/screenshoots/screenshoot-user-search-add-board-page.png
 
