@@ -71,11 +71,11 @@
 
         <v-col cols="12" class="mt-9" align="center">
           <v-btn small name="form" @click="addUserAsConnection"
-            >Add User As Connections Search
+            >Add User To Your Connections
           </v-btn>
         </v-col>
-
-        <v-alert
+      </v-container>
+      <v-alert
           border="top"
           color="red lighten-2"
           dark
@@ -84,7 +84,6 @@
           v-if="message"
           >{{ message }}
         </v-alert>
-      </v-container>
     </v-container>
   </v-container>
 </template>
@@ -110,13 +109,14 @@ export default {
   methods: {
     findUserByUserCode() {
       this.$validator.validateAll().then((isValid) => {
-        if (!isValid) {
+        if (!isValid ) {
           this.userCodeCorrect = false;
           this.message = "User with this user code does not exist !";
         }
-        if (this.userCodeCorrect) {
+        else if (this.userCodeCorrect) {
           UserService.findUserByUserCode(this.userCode).then(
             (response) => {
+              this.message = false;
               this.userCodeCorrect = true;
               this.user = response.data;
               console.log(response.data);

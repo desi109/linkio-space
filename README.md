@@ -22,7 +22,7 @@
   <h3 align="center">Linkio.Space</h3>
 
   <p align="center">
-    Linkio.Space is a web application that allows you to keep all your connections with people and their business cards. <br>You can easily and quickly add new links. All your business cards are stored and updated at any time.
+    Linkio.Space is a web application that allows you to keep all your connections with people and their business cards. <br>You can easily and quickly add new connections. All your business cards are stored and updated at any time.
     <br />
     <a href="https://github.com/desi109/linkio-space"><strong>Explore the docs »</strong></a>
     <br />
@@ -65,11 +65,63 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://linkio.space)
+The idea of this app is to save the user's business cards. When the user signs up, the system automatically generates a 4-digit code that is unique. If a user wants to give his business card to somebody, he just has to provide this code. The platform has a search system that searches other users by using this user code.  After the user's business card which is searched, is found, it can be added with just one click. The application has a user`s connections board, from where the user can see all his contacts. Every user profile can be edited and the new information for a user will be updated also for the people who have been saved his business card. 
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:** 
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+The app has a blue minimalistic design and it is easy to be used by everyone.
+
+On http://localhost:8081/, there is the start page. It has welcome information with a logo, simple navigation bar, and footer with contacts.
+[![Product Name Screen Shot][product-screenshot-start-page-1]](https://linkio.space)
+![product-screenshot-start-page-2]
+
+On http://localhost:8081/home, there is the home page with buttons for ```Sign Up``` and ```Log In```. The user can also use the navigation bar to sign up and log in.
+![product-screenshot-home-page]
+
+ The user can also use the navigation bar to sign up and login.
+
+ http://localhost:8081/register
+![product-screenshot-sign-up-page]
+
+http://localhost:8081/login
+![product-screenshot-log-in-page]
+
+The application has two views for the administrator and for the user. Credentials for login as administrator are:
+```
+Email: admin@gmail.com
+Password: admin123
+```
+Admin profile page (http://localhost:8081/profile) has information about the admin. The information can only be edited from the button ```EDIT YOUR INFORMATION```.
+![product-screenshot-admin-profile-page]
+
+After editing the information, everything should be saved from the button ```SAVE``` .
+![product-screenshot-admin-profil-edit-page]
+
+The admin view has ```Admin Board``` (http://localhost:8081/admin/users) where all users and their information is visible. 
+![product-screenshot-admin-board-page]
+
+Admin can delete users from the database.
+![product-screenshot-admin-board-delete-page]
+
+Credentials for login as user are for exaple:
+```
+Email: todor.todorov@gmail.com
+Password: 12345678
+
+// The password is the same for all test users.
+```
+The user can also edit his profile as the administrator.
+![product-screenshoot-user-profile-page]
+
+Every user has ```Connections``` (http://localhost:8081/user/connections) board where can remove business cards or see details about his connections.
+![product-screenshot-user-connections-board-page]
+![product-screenshot-user-connections-delete-board-page]
+
+To search for a new business card, the user should go to ```Search``` (http://localhost:8081/user/search), enter a code, and press the button for search.
+![product-screenshot-user-search-board-page]
+
+If the business card is found, the user can easily add it to his connections from the button ```ADD USER TO YOUR CONNECTIONS```. 
+![product-screenshoot-user-search-add-board-page]
+
+
 
 
 ### Built With
@@ -128,8 +180,48 @@ To run this project you first need to install and set up:
 
 2. Set up the database fot the project
   * ### For Windows
-  * ### For Linux
+  In pgAdmin open *Servers* and then *PostgreSQL Server*.
+  Go to:
   
+  ```Login/Group Roles -> Create -> Login/Group Role...```
+
+  Create new user:
+  ```
+  General: Name: linkio_space_user
+
+  Privileges:  Can login?        Yes.
+               Superuser?        No.
+               Create role?      Yes.
+               Create database?  Yes.
+               Update catalog?   No.
+               Inherit rights from the parent roles?  Yes.
+               Can initate streaming replication and backups? No.
+  ```
+
+
+  In pgAdmin open *Servers* and then *PostgreSQL Server*.
+
+  Go to:
+  ```Databases -> Create -> Database...```
+
+  Create new database:
+  ```
+  General: Database: linkio_space
+              Owner: linkio_space_user   
+
+  Definition:  Tablespace:  pg_default
+  ```
+   
+  Create database tables and import data. Copy the two scripts (```create_tables.sql``` and ```insert_data.sql``` ) from [here](https://github.com/desi109/linkio-space/tree/master/linkiospace-backend/src/main/resources/db_postgresql). 
+  Go to ```Servers -> PostgreSQL Server -> Databases -> linkio_space -> Query Tool...```.
+  Paste scripts and click button ```Execute/Refresh``` or clicl ```F5```.
+   
+   
+
+
+  * ### For Linux
+  [How to set up PostgreSQL server on Linux?](https://github.com/desi109/linux-cheat-sheet/blob/master/postgresql_setup)
+
   Start pgAdmin and run:
    ```sh
    cd linkiospace
@@ -155,13 +247,26 @@ To run this project you first need to install and set up:
    mvn spring-boot:run
    ```
    It is running on ```localhost:8080```.
+
+   To restart, first kill the process:
+   ```sh
+   kill -9 $(lsof -t -i:8080)   
+   ```
+   And run the previous command to start it again.
+
 4. Start the front-end of the project:
    ```sh
    cd linkiospace/linkiospace-ui
    npm run serve
    ```
    It is running on ```localhost:8081```.
-   
+
+   To restart, first kill the process:
+   ```sh
+   kill -9 $(lsof -t -i:8081)   
+   ```
+   And run the previous command to start it again.
+
 5. Everything is ready. Go to ```localhost:8081```. Enjoy!  😉
  
 
@@ -212,5 +317,19 @@ Project Link: [https://github.com/desi109/linkio-space](https://github.com/desi1
 [license-url]: https://github.com/desi109/linkio-space/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/desislava-milusheva-200574151
-[product-screenshot]: images/screenshoots/screenshoot-start-page-1.png
+[product-screenshot-start-page-1]: images/screenshoots/screenshoot-start-page-1.png
+[product-screenshot-start-page-2]: images/screenshoots/screenshoot-start-page-2.png
+[product-screenshot-home-page]: images/screenshoots/screenshoot-home-page.png
+[product-screenshot-sign-up-page]: images/screenshoots/screenshoot-sign-up-page.png
+[product-screenshot-log-in-page]: images/screenshoots/screenshoot-log-in-page.png
+[product-screenshot-admin-profil-page]: images/screenshoots/screenshoot-admin-profile-page.png
+[product-screenshot-admin-profil-edit-page]: images/screenshoots/screenshoot-admin-profile-edit-page.png
+[product-screenshot-admin-board-page]: images/screenshoots/screenshoot-admin-board-page.png
+[product-screenshot-admin-board-delete-page]: images/screenshoots/screenshoot-admin-board-delete-page.png
+[product-screenshot-user-profil-page]: images/screenshoots/screenshoot-user-profile-page.png
+[product-screenshot-user-connections-board-page]: images/screenshoots/screenshoot-user-connections-board-page.png
+[product-screenshot-user-connections-delete-board-page]: images/screenshoots/screenshoot-user-connections-delete-board-page.png
+[product-screenshot-user-profil-page]: images/screenshoots/screenshoot-user-profile-page.png
+[product-screenshot-user-search-board-page]: images/screenshoots/screenshoot-user-search-board-page.png
+[product-screenshoot-user-search-add-board-page]: images/screenshoots/screenshoot-user-search-add-board-page.png
 
