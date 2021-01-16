@@ -70,7 +70,7 @@ The idea of this app is to save the user's business cards. When the user signs u
 The app has a blue minimalistic design and it is easy to be used by everyone.
 
 On http://localhost:8081/, there is the start page. It has welcome information with a logo, simple navigation bar, and footer with contacts.
-[![Product Name Screen Shot][product-screenshot-start-page-1]](https://linkio.space)
+![product-screenshot-start-page-1]
 ![product-screenshot-start-page-2]
 
 On http://localhost:8081/home, there is the home page with buttons for ```Sign Up``` and ```Log In```. The user can also use the navigation bar to sign up and log in.
@@ -90,7 +90,7 @@ Email: admin@gmail.com
 Password: admin123
 ```
 Admin profile page (http://localhost:8081/profile) has information about the admin. The information can only be edited from the button ```EDIT YOUR INFORMATION```.
-![product-screenshot-admin-profile-page]
+![product-screenshot-admin-profil-page]
 
 After editing the information, everything should be saved from the button ```SAVE``` .
 ![product-screenshot-admin-profile-edit-page]
@@ -109,7 +109,7 @@ Password: 12345678
 // The password is the same for all test users.
 ```
 The user can also edit his profile as the administrator.
-![product-screenshoot-user-profile-page]
+![product-screenshot-user-profile-page]
 
 Every user has ```Connections``` (http://localhost:8081/user/connections) board where can remove business cards or see details about his connections.
 ![product-screenshot-user-connections-board-page]
@@ -329,7 +329,6 @@ Project Link: [https://github.com/desi109/linkio-space](https://github.com/desi1
 [product-screenshot-user-profile-page]: images/screenshoots/screenshoot-user-profile-page.png
 [product-screenshot-user-connections-board-page]: images/screenshoots/screenshoot-user-connections-board-page.png
 [product-screenshot-user-connections-delete-board-page]: images/screenshoots/screenshoot-user-connections-delete-board-page.png
-[product-screenshot-user-profile-page]: images/screenshoots/screenshoot-user-profile-page.png
 [product-screenshot-user-search-board-page]: images/screenshoots/screenshoot-user-search-board-page.png
 [product-screenshoot-user-search-add-board-page]: images/screenshoots/screenshoot-user-search-add-board-page.png
 
