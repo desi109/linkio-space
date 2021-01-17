@@ -5,7 +5,7 @@ VALUES
 
 
 -- admin
--- email: admin@gmail.com
+-- email: admin@linkiospace.com
 -- password: admin123
 
 -- user
@@ -14,13 +14,13 @@ VALUES
 INSERT INTO users (id, user_code, first_name, last_name, email, password, phone_number,
                     job_title, company_name, bio, website_portfolio_link)
 VALUES
-(1, '0001', 'Ivana', 'Ivanova', 'admin@gmail.com', '$2a$10$8lSwinKDVqyReiS2WyUs4OMZRG8TWLtg3YB0B7zMjEXxcdt9n4R6y', '0876623964', 'Developer', 'Linkio.Space', 'My name is Ivana and I am a Java Developer at Linkio.Space.', 'linkio.space'),
+(1, '0001', 'Ivana', 'Ivanova', 'admin@linkiospace.com', '$2a$10$8lSwinKDVqyReiS2WyUs4OMZRG8TWLtg3YB0B7zMjEXxcdt9n4R6y', '0876623964', 'Developer', 'Linkio.Space', 'My name is Ivana and I am a Java Developer at Linkio.Space.', 'linkio.space'),
 (2, '0002', 'Todor', 'Todorov', 'todor.todorov@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0898623954', 'Senior Software Engineer', 'Soft GB', 'I am Todor Todorov and I work as Senior Software Engineer at Soft GB.', 'softgb.com'),
 (3, '0003', 'Marina', 'Marinova', 'marina.marinova@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0886233964',  'CEO', 'Dp. E.', 'I am Marina and I work for Dp. E. as a CEO. Our mission is to help people.', ''),
 (4, '0004', 'Cveta', 'Cveteva', 'cveta.cveteva@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0886623964', 'App Developer', 'App Me', '', 'app-me.com'),
 (5, '0005', 'Boris', 'Borisov', 'boris.borisov@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0886623964', 'HR', 'Best Credits', '', 'bestcredits.com'),
 (6, '0006', 'Hristo', 'Hristov', 'hristo.hristov@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0896623964', 'Junior Software Engineer', 'Cosmo', 'I am Hristo and I work as Junior Software Engineer.', 'cosmo.com'),
-(7, '0002', 'Krasimir', 'Krasimirov', 'krasimir.krasimirov@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0898623954', 'Senior Software Engineer', 'Soft GB', 'My name is Krasimir and I am a Senior Software Engineer.', '');
+(7, '0007', 'Krasimir', 'Krasimirov', 'krasimir.krasimirov@gmail.com', '$2a$10$4K8Vq5mw.nwxl.WRmuYCfevme82c73uGkEcnPbmm/3/YJ3UToie7m', '0898623954', 'Senior Software Engineer', 'Soft GB', 'My name is Krasimir and I am a Senior Software Engineer.', '');
 
 INSERT INTO users_roles (user_id, role_id)
 VALUES

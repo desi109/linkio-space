@@ -140,12 +140,12 @@ To run this project you first need to install and set up:
   ```sh
   java -version
   ```
-* [ApacheMaven 3.6.3](https://maven.apache.org/download.cgi)
+* [ApacheMaven v3.6.3](https://maven.apache.org/download.cgi)
   ```sh
   mvn -v
   ```
-* [PostgreSQL 12.4](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-* [pgAdmin 4](https://www.pgadmin.org/download/)
+* [PostgreSQL v12.4](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+* [pgAdmin v4.20](https://www.pgadmin.org/download/)
 * [Node.js v12.18](https://nodejs.org/en/download/)
   ```sh
   node -v
@@ -154,14 +154,14 @@ To run this project you first need to install and set up:
   ```sh
   npm -v
   ```
-* [Vue](https://vuejs.org/v2/guide/installation.html)
+* [Vue 2](https://vuejs.org/v2/guide/installation.html)
   ```sh
   npm install vue
-  vue -V
   ```
-* [Vue CLI](https://cli.vuejs.org/guide/installation.html)
+* [Vue CLI v4.5](https://cli.vuejs.org/guide/installation.html)
   ```sh
   npm install -g @vue/cli
+  vue -V 
   ```
 
 
