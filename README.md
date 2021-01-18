@@ -174,7 +174,7 @@ To run this project you first need to install and set up:
    git clone https://github.com/desi109/linkio-space.git
    ```
 
-2. Set up the database fot the project
+2. Set up the database for the project
   * ### For Windows
   In pgAdmin open *Servers* and then *PostgreSQL Server*.
   Go to:
