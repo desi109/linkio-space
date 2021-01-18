@@ -85,7 +85,7 @@ http://localhost:8081/login
 
 The application has two views for the administrator and for the user. Credentials for login as administrator are:
 ```
-Email: admin@gmail.com
+Email: admin@linkiospace.com
 Password: admin123
 ```
 Admin profile page (http://localhost:8081/profile) has information about the admin. The information can only be edited from the button ```EDIT YOUR INFORMATION```.

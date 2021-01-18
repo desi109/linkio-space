@@ -76,10 +76,11 @@ public class User {
         this.password = password;
     }
 
-    public User(String firstName, String lastName, String email, String password, String phoneNumber, String jobTitle,
+    public User(String firstName, String lastName, String userCode, String email, String password, String phoneNumber, String jobTitle,
                 String companyName, String bio, String websitePortfolioLink) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.userCode = userCode;
         this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
@@ -101,11 +102,9 @@ public class User {
         return userCode;
     }
 
-    @PrePersist
-    public void setUserCode() {
-        this.userCode = IdGenerator.GetBase36(4);
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
     }
-
 
     public String getFirstName() {
         return firstName;

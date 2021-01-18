@@ -3,6 +3,7 @@ package com.linkiospace.controllers;
 import com.linkiospace.entities.ERole;
 import com.linkiospace.entities.Role;
 import com.linkiospace.entities.User;
+import com.linkiospace.generator.IdGenerator;
 import com.linkiospace.payload.request.LoginRequest;
 import com.linkiospace.payload.request.SignupRequest;
 import com.linkiospace.payload.response.JwtResponse;
@@ -88,10 +89,16 @@ public class AuthController {
                     .body(new MessageResponse("Error: Email is already taken!"));
         }
 
+        Set<String> userCodes = userRepository.findUserCodes();
+        String newUserCode = IdGenerator.generateBase36(4);
+        newUserCode = IdGenerator.getBase36( 4, userCodes, newUserCode);
+
+
         // Create new user account
         User user = new User(
                 signupRequest.getFirstName(),
                 signupRequest.getLastName(),
+                newUserCode,
                 signupRequest.getEmail(),
                 passwordEncoder.encode(signupRequest.getPassword()),
                 signupRequest.getPhoneNumber(),
